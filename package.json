@@ -2,6 +2,7 @@
   "private": true,
   "name": "monki-ui",
   "version": "1.0.0",
+  "homepage": "https://jacky-summer.github.io/monki-ui",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
