@@ -1,4 +1,4 @@
-# monki-ui
+# Monki UI
 
 ## Getting Started
 
