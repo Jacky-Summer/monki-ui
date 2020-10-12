@@ -5,6 +5,7 @@
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
     "build": "dumi build",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "release": "npm run build && npm publish",
@@ -23,6 +24,11 @@
       "prettier --parser=typescript --write",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "react": "^16.13.1"
