@@ -1,4 +1,11 @@
 {
+  "search.exclude": {
+    "**/node_modules": true,
+    "dist": true,
+    "docs-dist": true,
+    "yarn.lock": true,
+    "src/.umi": true
+  },
   "editor.formatOnSave": true,
   "eslint.validate": [
     "javascript",
@@ -6,7 +13,10 @@
     "typescript",
     "typescriptreact"
   ],
+  "css.validate": false,
+  "less.validate": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   }
 }

@@ -2,10 +2,8 @@ import { defineConfig } from 'dumi'
 
 export default defineConfig({
   title: 'Monki UI',
-  favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+  favicon: 'https://img.icons8.com/ultraviolet/2x/year-of-monkey.png',
+  logo: 'https://img.icons8.com/ultraviolet/2x/year-of-monkey.png',
   base: '/monki-ui',
   publicPath: '/monki-ui/',
   mode: 'site',

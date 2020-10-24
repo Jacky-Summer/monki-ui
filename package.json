@@ -1,8 +1,25 @@
 {
-  "private": true,
   "name": "monki-ui",
   "version": "1.0.0",
+  "description": "React components library",
+  "title": "Monki UI",
+  "author": "JackySummer",
+  "keyword": [
+    "monki-ui",
+    "component",
+    "design",
+    "frontend",
+    "react",
+    "react-component",
+    "ui"
+  ],
+  "private": true,
   "homepage": "https://jacky-summer.github.io/monki-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jacky-Summer/monki-ui"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -11,42 +28,61 @@
     "deploy": "npm run docs:build && npm run docs:deploy",
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "commit": "git-cz"
+    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "lint:eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js ./components --fix",
+    "lint:stylelint": "stylelint **/*.{html,css,less} --fix",
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint --config .commitlintrc.js -E HUSKY_GIT_PARAMS"
+    }
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
+    "*.{js,jsx,md,json}": [
       "prettier --write",
       "git add"
     ],
     "*.ts?(x)": [
       "prettier --parser=typescript --write",
       "git add"
+    ],
+    "*.{less,css}": [
+      "stylelint --fix",
+      "git add"
     ]
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog-emoji"
     }
   },
-  "dependencies": {
-    "react": "^16.13.1"
-  },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
     "commitizen": "^4.2.1",
-    "cz-conventional-changelog": "^3.3.0",
+    "conventional-changelog-cli": "^2.1.0",
+    "cz-conventional-changelog-emoji": "^0.1.0",
     "dumi": "^1.0.10",
     "eslint": "^7.11.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-react-hooks": "^4.1.2",
     "gh-pages": "^3.0.0",
+    "husky": "^4.3.0",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
+    "react": "^17.0.1",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "typescript": "^4.0.3",
     "yorkie": "^2.0.0"
   }
 }
