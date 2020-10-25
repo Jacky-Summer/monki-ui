@@ -5,7 +5,7 @@ hero:
   desc: 🏆 个人开源项目，使用 React + TypeScript 打造自己的 UI 组件库
   actions:
     - text: 开始使用
-      link: /components
+      link: /guide
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 开箱即用
