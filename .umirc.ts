@@ -8,5 +8,15 @@ export default defineConfig({
   publicPath: '/monki-ui/',
   mode: 'site',
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
+  resolve: {
+    includes: ['docs', 'components'],
+  },
+  navs: [
+    null,
+    {
+      title: 'Github',
+      path: 'https://github.com/Jacky-Summer/monki-ui',
+    },
+  ],
   // more config: https://d.umijs.org/config
 })
