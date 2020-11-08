@@ -3,6 +3,13 @@ import classNames from 'classnames'
 
 import '../style'
 
+const isString = (children: React.ReactNode) => {
+  if (typeof children === 'string') {
+    return <span>{children}</span>
+  }
+  return children
+}
+
 export type ButtonType =
   | 'default'
   | 'primary'
@@ -49,12 +56,10 @@ const Button: FC<ButtonProps> = ({
   type,
   htmlType,
   size,
-  shape,
   disabled,
   loading,
   block,
   className,
-  icon,
   href,
   children,
   ...restProps
@@ -62,10 +67,8 @@ const Button: FC<ButtonProps> = ({
   const classes = classNames('mk-btn', className, {
     [`mk-btn-${type}`]: type,
     [`mk-btn-${size}`]: size,
-    [`mk-btn-${shape}`]: shape,
     'mk-btn-loading': loading,
     'mk-btn-block': block,
-    'mk-btn-icon-only': icon,
   })
 
   if (type === 'link' && href) {
@@ -76,6 +79,8 @@ const Button: FC<ButtonProps> = ({
     )
   }
 
+  const kids = isString(children)
+
   return (
     <button
       type={htmlType}
@@ -83,8 +88,7 @@ const Button: FC<ButtonProps> = ({
       disabled={disabled}
       {...restProps}
     >
-      {icon}
-      {children}
+      {kids}
     </button>
   )
 }
@@ -95,8 +99,7 @@ Button.defaultProps = {
   size: 'md',
   block: false,
   loading: false,
-  htmlType: 'button',
-  icon: null,
+  htmlType: 'button' as ButtonProps['htmlType'],
 }
 
 export default Button
