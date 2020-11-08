@@ -1,6 +1,6 @@
 module.exports = {
   roots: ['<rootDir>'],
-  setupFiles: ['<rootDir>/scripts/jest/setupEnzyme.ts'],
+  setupFiles: ['<rootDir>/scripts/jest/setup.ts'],
   transform: {
     '\\.(ts|tsx)$': 'ts-jest',
   },
