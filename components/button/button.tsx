@@ -21,15 +21,12 @@ export type ButtonType =
   | 'text'
 
 export type ButtonSize = 'lg' | 'md' | 'sm'
-export type ButtonShape = 'circle' | 'round'
 export type ButtonHTMLTypes = 'submit' | 'button' | 'reset'
 
 interface BaseButtonProps {
   type?: ButtonType
   size?: ButtonSize
-  shape?: ButtonShape
   disabled?: boolean
-  loading?: boolean
   block?: boolean
   className?: string
   href?: string
@@ -57,7 +54,6 @@ const Button: FC<ButtonProps> = ({
   htmlType,
   size,
   disabled,
-  loading,
   block,
   className,
   href,
@@ -67,7 +63,6 @@ const Button: FC<ButtonProps> = ({
   const classes = classNames('mk-btn', className, {
     [`mk-btn-${type}`]: type,
     [`mk-btn-${size}`]: size,
-    'mk-btn-loading': loading,
     'mk-btn-block': block,
   })
 
@@ -98,7 +93,6 @@ Button.defaultProps = {
   type: 'default',
   size: 'md',
   block: false,
-  loading: false,
   htmlType: 'button' as ButtonProps['htmlType'],
 }
 
