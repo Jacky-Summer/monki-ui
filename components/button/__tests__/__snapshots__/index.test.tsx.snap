@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should render Buttons of different size correctly 1`] = `
+<div>
+  <button
+    class="mk-btn mk-btn-primary mk-btn-lg"
+    type="button"
+  >
+    <span>
+      lg尺寸
+    </span>
+  </button>
+  <button
+    class="mk-btn mk-btn-primary mk-btn-md"
+    type="button"
+  >
+    <span>
+      md尺寸
+    </span>
+  </button>
+  <button
+    class="mk-btn mk-btn-primary mk-btn-sm"
+    type="button"
+  >
+    <span>
+      sm尺寸
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render Buttons of different type correctly 1`] = `
+<div>
+  <button
+    class="mk-btn mk-btn-default mk-btn-md"
+    type="button"
+  >
+    <span>
+      default
+    </span>
+  </button>
+  <button
+    class="mk-btn mk-btn-primary mk-btn-md"
+    type="button"
+  >
+    <span>
+      primary
+    </span>
+  </button>
+  <button
+    class="mk-btn mk-btn-info mk-btn-md"
+    type="button"
+  >
+    <span>
+      info
+    </span>
+  </button>
+  <button
+    class="mk-btn mk-btn-warning mk-btn-md"
+    type="button"
+  >
+    <span>
+      warning
+    </span>
+  </button>
+  <button
+    class="mk-btn mk-btn-danger mk-btn-md"
+    type="button"
+  >
+    <span>
+      danger
+    </span>
+  </button>
+  <button
+    class="mk-btn mk-btn-dashed mk-btn-md"
+    type="button"
+  >
+    <span>
+      dashed
+    </span>
+  </button>
+  <button
+    class="mk-btn mk-btn-text mk-btn-md"
+    type="button"
+  >
+    <span>
+      text
+    </span>
+  </button>
+</div>
+`;
