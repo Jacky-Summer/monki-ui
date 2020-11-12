@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - 11
+
+cache: yarn
+
+install:
+  - yarn
+script:
+  - yarn test
+  - yarn build
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  skip_cleanup: true
+  keep-history: true
+  local_dir: dist
+
+branches:
+  only:
+    - master
