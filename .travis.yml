@@ -15,8 +15,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   skip_cleanup: true
   keep-history: true
-  local_dir: dist
-
-branches:
-  only:
-    - master
+  local_dir: docs-dist
+  on:
+    branch: master
