@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "keyword": [
+  "keywords": [
     "monki-ui",
     "component",
     "design",
@@ -16,7 +16,6 @@
     "react-component",
     "ui"
   ],
-  "private": true,
   "homepage": "https://jacky-summer.github.io/monki-ui",
   "repository": {
     "type": "git",
