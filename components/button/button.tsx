@@ -1,8 +1,6 @@
 import React, { FC } from 'react'
 import classNames from 'classnames'
 
-import '../style'
-
 const isString = (children: React.ReactNode) => {
   if (typeof children === 'string') {
     return <span>{children}</span>
