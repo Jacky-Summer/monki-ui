@@ -4,6 +4,9 @@
   "description": "React components library",
   "title": "Monki UI",
   "author": "JackySummer",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keyword": [
     "monki-ui",
     "component",
@@ -23,14 +26,18 @@
   "scripts": {
     "start": "dumi dev",
     "test": "jest",
-    "build": "dumi build",
-    "release": "npm run build && npm publish",
+    "clean": "rimraf ./dist",
+    "build": "yarn build:docs && yarn build:lib",
+    "build:docs": "dumi build",
+    "build:lib": "yarn clean && yarn build-ts && yarn build-css",
+    "build-ts": "tsc -p tsconfig.build.json",
+    "build-css": "dart-sass ./components/style/index.scss ./dist/index.css",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "lint": "yarn lint:eslint && yarn lint:stylelint",
     "lint:eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js ./components --fix",
     "lint:stylelint": "stylelint **/*.{html,css,less} --fix",
     "commit": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.en-US.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "husky": {
     "hooks": {
@@ -57,9 +64,13 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@types/cheerio": "^0.22.22",
     "@types/classnames": "^2.2.11",
     "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
@@ -70,6 +81,7 @@
     "commitizen": "^4.2.1",
     "conventional-changelog-cli": "^2.1.0",
     "cz-conventional-changelog": "^3.3.0",
+    "dart-sass": "^1.25.0",
     "dumi": "^1.0.10",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
@@ -86,6 +98,7 @@
     "prettier": "^1.19.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
+    "rimraf": "^3.0.2",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-rational-order": "^0.1.2",
