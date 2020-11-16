@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../button'
-import '../../style'
+import { Button } from 'monki-ui'
+import 'monki-ui/dist/index.css'
 
 export default () => (
   <div id="components-button-demo-shape">
