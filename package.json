@@ -1,6 +1,6 @@
 {
   "name": "monki-ui",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "React components library",
   "title": "Monki UI",
   "author": "JackySummer",
@@ -36,7 +36,7 @@
     "lint:eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js ./components --fix",
     "lint:stylelint": "stylelint **/*.{html,css,less} --fix",
     "commit": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "bump-version": "standard-version --skip.commit --skip.tag"
   },
   "husky": {
     "hooks": {
@@ -79,7 +79,6 @@
     "@typescript-eslint/parser": "^4.4.0",
     "@umijs/plugin-sass": "^1.1.1",
     "commitizen": "^4.2.1",
-    "conventional-changelog-cli": "^2.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "dart-sass": "^1.25.0",
     "dumi": "^1.0.10",
@@ -99,6 +98,7 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "rimraf": "^3.0.2",
+    "standard-version": "^9.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-rational-order": "^0.1.2",

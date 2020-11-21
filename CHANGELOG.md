@@ -1,4 +1,12 @@
-# 版本更新日志
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.1.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.0.0...v1.1.0) (2020-11-21)
+
+### Features
+
+- add alert component ([#16](https://github.com/Jacky-Summer/monki-ui/issues/16)) ([561b52c](https://github.com/Jacky-Summer/monki-ui/commit/561b52cc1e4c13519e9651c477c9a6224bd39afd))
 
 ## 1.0.0 (2020-11-14)
 
