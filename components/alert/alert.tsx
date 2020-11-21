@@ -5,16 +5,16 @@ import Transition from '../transition'
 
 export type AlertType = 'success' | 'info' | 'warning' | 'error'
 
-interface Props {
+export interface AlertProps {
   message: string
   description?: string
-  type: AlertType
+  type?: AlertType
   closable?: boolean
   className?: string
   onClose?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void
 }
 
-const Alert: FC<Props> = ({
+const Alert: FC<AlertProps> = ({
   type,
   description,
   message,
