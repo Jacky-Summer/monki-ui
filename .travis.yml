@@ -11,10 +11,16 @@ script:
   - yarn test
   - yarn build
 deploy:
-  provider: pages
-  github_token: $GITHUB_TOKEN
-  skip_cleanup: true
-  keep-history: true
-  local_dir: docs-dist
-  on:
-    branch: master
+  - provider: pages
+    github_token: $GITHUB_TOKEN
+    skip_cleanup: true
+    keep-history: true
+    local_dir: docs-dist
+    on:
+      branch: master
+  - provider: npm
+    email: $NPM_EMAIL
+    api_key: $NPM_TOKEN
+    skip_cleanup: true
+    on:
+      branch: master
