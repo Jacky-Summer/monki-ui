@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://jacky-summer.github.io/monki-ui">
-    <img width="150" src="https://img.icons8.com/ultraviolet/2x/year-of-monkey.png">
+    <img width="120" src="https://img.icons8.com/ultraviolet/2x/year-of-monkey.png">
   </a>
 </p>
 
@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Build Status](https://travis-ci.com/Jacky-Summer/monki-ui.svg?branch=master)](https://travis-ci.com/Jacky-Summer/monki-ui)
+[![Build Status](https://travis-ci.com/Jacky-Summer/monki-ui.svg?branch=master)](https://travis-ci.com/Jacky-Summer/monki-ui) [![](https://img.shields.io/npm/v/monki-ui.svg)](https://www.npmjs.com/package/monki-ui) ![](https://img.shields.io/github/license/Jacky-Summer/monki-ui)
 
 Monki UI，是一款基于 Dumi，由 React + TypeScript 开发的个人组件库 🎉。
 
@@ -25,6 +25,36 @@ Monki UI，是一款基于 Dumi，由 React + TypeScript 开发的个人组件�
 - 📖 提供开发过程的文档思路，助力你学习组件开发
 - 🔖 该项目会长期维护，并不断探索最佳实践
 
+## 📦 安装
+
+使用 npm 或 yarn 安装（推荐）
+
+```bash
+yarn add monki-ui
+```
+
+```bash
+npm install monki-ui
+```
+
+## 🔨 示例
+
+```jsx
+import { Button } from 'monki-ui'
+
+const App = () => (
+  <>
+    <Button type="primary">Primary Button</Button>
+  </>
+)
+```
+
+引入样式：
+
+```jsx
+import 'monki-ui/dist/index.css'
+```
+
 ## 计划
 
 🚧 开发中......
@@ -36,3 +66,4 @@ Monki UI，是一款基于 Dumi，由 React + TypeScript 开发的个人组件�
 - CSS 样式解决方案、初始化文件结构、UI 设计
 - Button 组件开发与测试
 - 增加 Travis CI
+- 创建入口文件，并发布到 npm
