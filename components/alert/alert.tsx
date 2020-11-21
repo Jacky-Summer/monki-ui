@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react'
 import classNames from 'classnames'
 import CloseOutlined from '@ant-design/icons/CloseOutlined'
+import Transition from '../transition'
 
 export type AlertType = 'success' | 'info' | 'warning' | 'error'
 
@@ -33,19 +34,17 @@ const Alert: FC<Props> = ({
   const titleClass = classNames('mk-alert-message')
 
   return (
-    <>
-      {!closed ? (
-        <div className={classes}>
-          <span className={titleClass}>{message}</span>
-          {description && <p className="mk-alert-desc">{description}</p>}
-          {closable && (
-            <span className="mk-alert-close" onClick={handleClose}>
-              <CloseOutlined />
-            </span>
-          )}
-        </div>
-      ) : null}
-    </>
+    <Transition in={!closed} timeout={300} animation="zoom-in-left">
+      <div className={classes}>
+        <span className={titleClass}>{message}</span>
+        {description && <p className="mk-alert-desc">{description}</p>}
+        {closable && (
+          <span className="mk-alert-close" onClick={handleClose}>
+            <CloseOutlined />
+          </span>
+        )}
+      </div>
+    </Transition>
   )
 }
 
