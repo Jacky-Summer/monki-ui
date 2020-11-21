@@ -1,6 +1,6 @@
 import React from 'react'
-import Alert from '../alert'
-import '../../style'
+import { Alert } from 'monki-ui'
+import 'monki-ui/dist/index.css'
 
 export default () => (
   <div>
