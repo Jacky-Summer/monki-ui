@@ -22,7 +22,11 @@ module.exports = {
     'react/display-name': 0,
     'react/jsx-props-no-spreading': 0,
 
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+
     'no-use-before-define': 0,
+    'no-unused-vars': 0,
     'import/no-extraneous-dependencies': 0,
     'import/extensions': 0,
     'import/no-unresolved': 0,

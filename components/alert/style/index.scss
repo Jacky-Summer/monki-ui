@@ -1,0 +1,38 @@
+@import 'mixins';
+
+$alert-colors: (
+  'success': $success-100,
+  'info': $blue-100,
+  'warning': $warning-100,
+  'error': $danger-100,
+);
+.mk-alert {
+  position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $alert-margin-bottom;
+  border: $alert-border-width solid transparent;
+  border-radius: $alert-border-radius;
+  .mk-alert-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $alert-close-padding-y $alert-close-padding-x;
+    color: $font-color-normal;
+    font-size: $alert-description-font-size;
+    cursor: pointer;
+  }
+
+  .mk-alert-desc {
+    font-size: $alert-description-font-size;
+    margin: $alert-description-top-margin 0 0;
+  }
+}
+@each $color, $value in $alert-colors {
+  .mk-alert-#{$color} {
+    @include alert-style($value, darken($value, 5%), $font-color-normal);
+
+    > p {
+      color: $font-color-light;
+    }
+  }
+}
