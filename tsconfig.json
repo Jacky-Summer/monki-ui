@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2019",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "importHelpers": true,
     "strictNullChecks": true,
     "jsx": "react",
@@ -10,10 +10,6 @@
     "sourceMap": true,
     "baseUrl": "./",
     "strict": true,
-    "paths": {
-      "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
-    },
     "allowSyntheticDefaultImports": true
   },
   "exclude": ["node_modules", "dist", "typings"]
