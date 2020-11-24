@@ -30,7 +30,3 @@ nav:
 - [个人博客](https://jacky-summer.github.io/)
 - [SegmentFault](https://segmentfault.com/u/jackysummer)
 - [公众号-前端精神时光屋](https://raw.githubusercontent.com/jacky-summer/personal-blog/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6/fe-house-qrcode.jpg)
-
-## 参与贡献
-
-如果你希望参与贡献，欢迎 PR，或给我报告 Bug。请访问 [monki-ui](https://github.com/Jacky-Summer/monki-ui)
