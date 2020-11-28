@@ -5,7 +5,7 @@
 请确保填写以下 pull request 的信息，谢谢！~
 -->
 
-[[English Template / 英文模板](https://github.com/Jacky-Summer/monki-ui/blob/development/.github/PULL_REQUEST_TEMPLATE.md)]
+[[English Template / 英文模板](https://github.com/Jacky-Summer/monki-ui/blob/development/.github/PULL_REQUEST_TEMPLATE/pr_en.md)]
 
 ### 🤔 这个变动的性质是？
 
