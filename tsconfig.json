@@ -10,7 +10,10 @@
     "sourceMap": true,
     "baseUrl": "./",
     "strict": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@wojtekmaj/enzyme-adapter-react-17": ["./types/enzyme-adapter-react-17"]
+    }
   },
   "exclude": ["node_modules", "dist", "typings"]
 }
