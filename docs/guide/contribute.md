@@ -59,7 +59,8 @@ nav:
 - ✅ test：添加缺失的测试或更正现有的测试
 - 📦 build：改变了 build 工具
 - 👷 ci：持续集成
-- 🎉 release（only used in PR title）：发布版本提交
+
+🎉 release（only used in PR title）：发布版本提交
 
 更多详细小贴士请阅读[pull request 模板](https://github.com/Jacky-Summer/monki-ui/blob/development/.github/PULL_REQUEST_TEMPLATE/pr_cn.md)
 
