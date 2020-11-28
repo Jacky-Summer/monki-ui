@@ -61,7 +61,8 @@ Describe changes from the user side, and list all potential break changes or oth
 - ✅ test：Adding missing tests or correcting existing tests
 - 📦 build：Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
 - 👷 ci：Changes to our CI configuration files and scripts (example scopes: Travis, Circle)
-- 🎉 release（only used in PR title）：submit release version
+
+🎉 release（only used in PR title）：submit release version
 
 ### ☑️ Self Check before Merge
 
