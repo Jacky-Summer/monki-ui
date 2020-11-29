@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [1.1.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.0.0...v1.1.0) (2020-11-21)
+## [1.3.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.2.0...v1.3.0) (2020-11-29)
+
+### Features
+
+- upgrade react16 to react17 version ([#28](https://github.com/Jacky-Summer/monki-ui/issues/28)) ([695c6e4](https://github.com/Jacky-Summer/monki-ui/commit/695c6e4c8d3d7036ceae2683dd52a487cc36eeb9))
+
+## [1.2.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.0.0...v1.1.0) (2020-11-21)
 
 ### Features
 
