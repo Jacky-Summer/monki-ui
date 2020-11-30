@@ -1,9 +1,9 @@
 ---
-title: Menu
+title: Menu 导航菜单
 group:
-  title: Menu
+  title: Menu 导航菜单
 nav:
-  title: '菜单'
+  title: '组件'
   path: /components
 ---
 
