@@ -1,0 +1,679 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu component render should render the correct default menu 1`] = `
+<RootMenu
+  defaultOpenKeys={Array []}
+  defaultSelectedKey="0"
+  mode="horizontal"
+>
+  <ul
+    className="mk-menu mk-menu-horizontal"
+  >
+    <MenuItem
+      index="0"
+      key=".0"
+    >
+      <li
+        className="mk-menu-item is-active"
+        onClick={[Function]}
+      >
+        menu1
+      </li>
+    </MenuItem>
+    <MenuItem
+      disabled={true}
+      index="1"
+      key=".1"
+    >
+      <li
+        className="mk-menu-item is-disabled"
+        onClick={[Function]}
+      >
+        menu2
+      </li>
+    </MenuItem>
+    <MenuItem
+      index="2"
+      key=".2"
+    >
+      <li
+        className="mk-menu-item"
+        onClick={[Function]}
+      >
+        menu3
+      </li>
+    </MenuItem>
+  </ul>
+</RootMenu>
+`;
+
+exports[`Menu component render should render the correct default menu with SubMenu 1`] = `
+<RootMenu
+  defaultOpenKeys={Array []}
+  defaultSelectedKey="0"
+  mode="horizontal"
+>
+  <ul
+    className="mk-menu mk-menu-horizontal"
+  >
+    <MenuItem
+      index="0"
+      key=".0"
+    >
+      <li
+        className="mk-menu-item is-active"
+        onClick={[Function]}
+      >
+        menu1
+      </li>
+    </MenuItem>
+    <MenuItem
+      disabled={true}
+      index="1"
+      key=".1"
+    >
+      <li
+        className="mk-menu-item is-disabled"
+        onClick={[Function]}
+      >
+        menu2
+      </li>
+    </MenuItem>
+    <MenuItem
+      index="2"
+      key=".2"
+    >
+      <li
+        className="mk-menu-item"
+        onClick={[Function]}
+      >
+        menu3
+      </li>
+    </MenuItem>
+    <SubMenu
+      index="3"
+      key=".3"
+      title="menu4"
+    >
+      <li
+        className="mk-menu-item mk-submenu-item"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="mk-submenu-title"
+        >
+          menu4
+          <ForwardRef(DownOutlined)
+            className="arrow-icon"
+          >
+            <AntdIcon
+              className="arrow-icon"
+              icon={
+                Object {
+                  "icon": Object {
+                    "attrs": Object {
+                      "focusable": "false",
+                      "viewBox": "64 64 896 896",
+                    },
+                    "children": Array [
+                      Object {
+                        "attrs": Object {
+                          "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                        },
+                        "tag": "path",
+                      },
+                    ],
+                    "tag": "svg",
+                  },
+                  "name": "down",
+                  "theme": "outlined",
+                }
+              }
+            >
+              <span
+                aria-label="down"
+                className="anticon anticon-down arrow-icon"
+                role="img"
+              >
+                <IconReact
+                  icon={
+                    Object {
+                      "icon": Object {
+                        "attrs": Object {
+                          "focusable": "false",
+                          "viewBox": "64 64 896 896",
+                        },
+                        "children": Array [
+                          Object {
+                            "attrs": Object {
+                              "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                            },
+                            "tag": "path",
+                          },
+                        ],
+                        "tag": "svg",
+                      },
+                      "name": "down",
+                      "theme": "outlined",
+                    }
+                  }
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="down"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    key="svg-down"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                      key="svg-down-svg-0"
+                    />
+                  </svg>
+                </IconReact>
+              </span>
+            </AntdIcon>
+          </ForwardRef(DownOutlined)>
+        </div>
+        <Transition
+          animation="zoom-in-top"
+          appear={true}
+          in={false}
+          timeout={300}
+          unmountOnExit={true}
+          wrapper={false}
+        >
+          <CSSTransition
+            appear={true}
+            classNames="zoom-in-top"
+            in={false}
+            timeout={300}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={true}
+              enter={true}
+              exit={true}
+              in={false}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={300}
+              unmountOnExit={true}
+            />
+          </CSSTransition>
+        </Transition>
+      </li>
+    </SubMenu>
+    <SubMenu
+      index="4"
+      key=".4"
+      title="menu5"
+    >
+      <li
+        className="mk-menu-item mk-submenu-item"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="mk-submenu-title"
+        >
+          menu5
+          <ForwardRef(DownOutlined)
+            className="arrow-icon"
+          >
+            <AntdIcon
+              className="arrow-icon"
+              icon={
+                Object {
+                  "icon": Object {
+                    "attrs": Object {
+                      "focusable": "false",
+                      "viewBox": "64 64 896 896",
+                    },
+                    "children": Array [
+                      Object {
+                        "attrs": Object {
+                          "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                        },
+                        "tag": "path",
+                      },
+                    ],
+                    "tag": "svg",
+                  },
+                  "name": "down",
+                  "theme": "outlined",
+                }
+              }
+            >
+              <span
+                aria-label="down"
+                className="anticon anticon-down arrow-icon"
+                role="img"
+              >
+                <IconReact
+                  icon={
+                    Object {
+                      "icon": Object {
+                        "attrs": Object {
+                          "focusable": "false",
+                          "viewBox": "64 64 896 896",
+                        },
+                        "children": Array [
+                          Object {
+                            "attrs": Object {
+                              "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                            },
+                            "tag": "path",
+                          },
+                        ],
+                        "tag": "svg",
+                      },
+                      "name": "down",
+                      "theme": "outlined",
+                    }
+                  }
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="down"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    key="svg-down"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                      key="svg-down-svg-0"
+                    />
+                  </svg>
+                </IconReact>
+              </span>
+            </AntdIcon>
+          </ForwardRef(DownOutlined)>
+        </div>
+        <Transition
+          animation="zoom-in-top"
+          appear={true}
+          in={false}
+          timeout={300}
+          unmountOnExit={true}
+          wrapper={false}
+        >
+          <CSSTransition
+            appear={true}
+            classNames="zoom-in-top"
+            in={false}
+            timeout={300}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={true}
+              enter={true}
+              exit={true}
+              in={false}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={300}
+              unmountOnExit={true}
+            />
+          </CSSTransition>
+        </Transition>
+      </li>
+    </SubMenu>
+  </ul>
+</RootMenu>
+`;
+
+exports[`Menu component render should render the correct inline menu 1`] = `
+<RootMenu
+  defaultOpenKeys={Array []}
+  defaultSelectedKey="0"
+  mode="inline"
+>
+  <ul
+    className="mk-menu mk-menu-inline"
+  >
+    <MenuItem
+      index="0"
+      key=".0"
+    >
+      <li
+        className="mk-menu-item is-active"
+        onClick={[Function]}
+      >
+        menu1
+      </li>
+    </MenuItem>
+    <MenuItem
+      disabled={true}
+      index="1"
+      key=".1"
+    >
+      <li
+        className="mk-menu-item is-disabled"
+        onClick={[Function]}
+      >
+        menu2
+      </li>
+    </MenuItem>
+    <MenuItem
+      index="2"
+      key=".2"
+    >
+      <li
+        className="mk-menu-item"
+        onClick={[Function]}
+      >
+        menu3
+      </li>
+    </MenuItem>
+  </ul>
+</RootMenu>
+`;
+
+exports[`Menu component render should render the correct inline menu with SubMenu 1`] = `
+<RootMenu
+  defaultOpenKeys={Array []}
+  defaultSelectedKey="0"
+  mode="inline"
+>
+  <ul
+    className="mk-menu mk-menu-inline"
+  >
+    <MenuItem
+      index="0"
+      key=".0"
+    >
+      <li
+        className="mk-menu-item is-active"
+        onClick={[Function]}
+      >
+        menu1
+      </li>
+    </MenuItem>
+    <MenuItem
+      disabled={true}
+      index="1"
+      key=".1"
+    >
+      <li
+        className="mk-menu-item is-disabled"
+        onClick={[Function]}
+      >
+        menu2
+      </li>
+    </MenuItem>
+    <MenuItem
+      index="2"
+      key=".2"
+    >
+      <li
+        className="mk-menu-item"
+        onClick={[Function]}
+      >
+        menu3
+      </li>
+    </MenuItem>
+    <SubMenu
+      index="3"
+      key=".3"
+      title="menu4"
+    >
+      <li
+        className="mk-menu-item mk-submenu-item is-inline"
+      >
+        <div
+          className="mk-submenu-title"
+          onClick={[Function]}
+        >
+          menu4
+          <ForwardRef(DownOutlined)
+            className="arrow-icon"
+          >
+            <AntdIcon
+              className="arrow-icon"
+              icon={
+                Object {
+                  "icon": Object {
+                    "attrs": Object {
+                      "focusable": "false",
+                      "viewBox": "64 64 896 896",
+                    },
+                    "children": Array [
+                      Object {
+                        "attrs": Object {
+                          "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                        },
+                        "tag": "path",
+                      },
+                    ],
+                    "tag": "svg",
+                  },
+                  "name": "down",
+                  "theme": "outlined",
+                }
+              }
+            >
+              <span
+                aria-label="down"
+                className="anticon anticon-down arrow-icon"
+                role="img"
+              >
+                <IconReact
+                  icon={
+                    Object {
+                      "icon": Object {
+                        "attrs": Object {
+                          "focusable": "false",
+                          "viewBox": "64 64 896 896",
+                        },
+                        "children": Array [
+                          Object {
+                            "attrs": Object {
+                              "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                            },
+                            "tag": "path",
+                          },
+                        ],
+                        "tag": "svg",
+                      },
+                      "name": "down",
+                      "theme": "outlined",
+                    }
+                  }
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="down"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    key="svg-down"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                      key="svg-down-svg-0"
+                    />
+                  </svg>
+                </IconReact>
+              </span>
+            </AntdIcon>
+          </ForwardRef(DownOutlined)>
+        </div>
+        <Transition
+          animation="zoom-in-top"
+          appear={true}
+          in={false}
+          timeout={300}
+          unmountOnExit={true}
+          wrapper={false}
+        >
+          <CSSTransition
+            appear={true}
+            classNames="zoom-in-top"
+            in={false}
+            timeout={300}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={true}
+              enter={true}
+              exit={true}
+              in={false}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={300}
+              unmountOnExit={true}
+            />
+          </CSSTransition>
+        </Transition>
+      </li>
+    </SubMenu>
+    <SubMenu
+      index="4"
+      key=".4"
+      title="menu5"
+    >
+      <li
+        className="mk-menu-item mk-submenu-item is-inline"
+      >
+        <div
+          className="mk-submenu-title"
+          onClick={[Function]}
+        >
+          menu5
+          <ForwardRef(DownOutlined)
+            className="arrow-icon"
+          >
+            <AntdIcon
+              className="arrow-icon"
+              icon={
+                Object {
+                  "icon": Object {
+                    "attrs": Object {
+                      "focusable": "false",
+                      "viewBox": "64 64 896 896",
+                    },
+                    "children": Array [
+                      Object {
+                        "attrs": Object {
+                          "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                        },
+                        "tag": "path",
+                      },
+                    ],
+                    "tag": "svg",
+                  },
+                  "name": "down",
+                  "theme": "outlined",
+                }
+              }
+            >
+              <span
+                aria-label="down"
+                className="anticon anticon-down arrow-icon"
+                role="img"
+              >
+                <IconReact
+                  icon={
+                    Object {
+                      "icon": Object {
+                        "attrs": Object {
+                          "focusable": "false",
+                          "viewBox": "64 64 896 896",
+                        },
+                        "children": Array [
+                          Object {
+                            "attrs": Object {
+                              "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                            },
+                            "tag": "path",
+                          },
+                        ],
+                        "tag": "svg",
+                      },
+                      "name": "down",
+                      "theme": "outlined",
+                    }
+                  }
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="down"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    key="svg-down"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                      key="svg-down-svg-0"
+                    />
+                  </svg>
+                </IconReact>
+              </span>
+            </AntdIcon>
+          </ForwardRef(DownOutlined)>
+        </div>
+        <Transition
+          animation="zoom-in-top"
+          appear={true}
+          in={false}
+          timeout={300}
+          unmountOnExit={true}
+          wrapper={false}
+        >
+          <CSSTransition
+            appear={true}
+            classNames="zoom-in-top"
+            in={false}
+            timeout={300}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={true}
+              enter={true}
+              exit={true}
+              in={false}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={300}
+              unmountOnExit={true}
+            />
+          </CSSTransition>
+        </Transition>
+      </li>
+    </SubMenu>
+  </ul>
+</RootMenu>
+`;
