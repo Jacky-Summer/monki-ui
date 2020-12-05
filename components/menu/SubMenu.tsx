@@ -2,7 +2,7 @@ import React, { FC, useContext, useState, FunctionComponentElement } from 'react
 import classNames from 'classnames'
 import { DownOutlined } from '@ant-design/icons'
 import MenuContext from './MenuContext'
-import { MenuItemProps } from './menuItem'
+import { MenuItemProps } from './MenuItem'
 import Transition from '../transition'
 
 export interface SubMenuProps {
