@@ -59,7 +59,8 @@ import 'monki-ui/dist/index.css'
 
 🚧 开发中......
 
-- 开发 Alert 组件
+- 开发 Tab 组件
+- 开发 Input 组件
 
 ✨ 已完成
 
@@ -67,3 +68,5 @@ import 'monki-ui/dist/index.css'
 - Button 组件开发与测试
 - 增加 Travis CI
 - 创建入口文件，并发布到 npm
+- 开发 Alert 组件
+- 开发 Menu 组件
