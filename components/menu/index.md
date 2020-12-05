@@ -21,11 +21,11 @@ nav:
 
 ### 只展开当前父级菜单
 
-通过`openKeys`设置当前展开的 SubMenu 菜单项 key 数组
+通过`defaultOpenKeys`设置当前展开的 SubMenu 菜单项 key 数组
 
 点击菜单，收起其他展开的所有菜单，保持菜单聚焦简洁。
 
-<code src="./demo/openKeys.tsx" />
+<code src="./demo/defaultOpenKeys.tsx" />
 
 ### 切换菜单类型
 

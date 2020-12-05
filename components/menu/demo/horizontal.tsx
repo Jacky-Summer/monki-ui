@@ -1,6 +1,6 @@
 import React from 'react'
-import Menu from '..'
-import '../../style'
+import { Menu } from 'monki-ui'
+import 'monki-ui/dist/index.css'
 
 export default () => {
   const onClick = (index: string) => {

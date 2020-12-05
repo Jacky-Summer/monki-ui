@@ -22,8 +22,7 @@
     &.is-active,
     &:hover {
       color: $menu-item-active-color;
-      border-bottom: $menu-item-active-border-width solid
-        $menu-item-active-color;
+      border-bottom: $menu-item-active-border-width solid $menu-item-active-color;
     }
   }
   .mk-submenu-item {
@@ -34,7 +33,8 @@
     }
     .arrow-icon {
       transition: transform 0.25s ease-in-out;
-      margin-left: 3px;
+      margin-left: 10px;
+      font-size: 12px;
     }
     &:hover {
       .arrow-icon {
@@ -53,11 +53,10 @@
     }
   }
   .mk-submenu {
-    //display: none;
     list-style: none;
     padding-left: 0;
     white-space: nowrap;
-    //transition: $menu-transition;
+    transition: $menu-transition;
     .mk-menu-item {
       padding: $menu-item-padding-y $menu-item-padding-x;
       cursor: pointer;
@@ -70,7 +69,7 @@
     }
   }
   .mk-submenu.menu-opened {
-    //display: block;
+    display: block;
   }
 }
 .mk-menu-horizontal {
