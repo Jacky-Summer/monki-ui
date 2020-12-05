@@ -1,7 +1,7 @@
 ---
-title: Alert
+title: Alert 警告提示
 group:
-  title: Alert
+  title: Alert 警告提示
 nav:
   title: '组件'
   path: /components
