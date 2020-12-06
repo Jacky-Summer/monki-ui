@@ -13,7 +13,7 @@ nav:
 
 `default` | `primary` | `info` | `warning` | `danger` | `dashed` | `link` | `text`
 
-<code src="./demo/type.tsx" />
+<code src="./demos/type.tsx" />
 
 ### 按钮尺寸
 
@@ -21,19 +21,19 @@ nav:
 
 `lg` | `md` | `sm`
 
-<code src="./demo/size.tsx" />
+<code src="./demos/size.tsx" />
 
 ### 不可用状态
 
 添加 `disabled` 属性即可让按钮处于不可用状态，同时按钮样式也会改变。
 
-<code src="./demo/disabled.tsx" />
+<code src="./demos/disabled.tsx" />
 
 ### Block 按钮
 
 `block`属性将使按钮适合其父宽度，默认不设置。
 
-<code src="./demo/block.tsx" />
+<code src="./demos/block.tsx" />
 
 ### API
 

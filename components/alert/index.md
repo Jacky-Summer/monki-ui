@@ -13,19 +13,19 @@ nav:
 
 `success` | `info` | `warning` | `error`
 
-<code src="./demo/type.tsx" />
+<code src="./demos/type.tsx" />
 
 ## 含有辅助性文字介绍的警告提示
 
 通过设置`description`属性。
 
-<code src="./demo/description.tsx" />
+<code src="./demos/description.tsx" />
 
 ## 可关闭的警告提示
 
 设置`closable`属性和添加`onClose`方法可显示关闭按钮，点击并可关闭警告提示。
 
-<code src="./demo/closable.tsx" />
+<code src="./demos/closable.tsx" />
 
 ## API
 
