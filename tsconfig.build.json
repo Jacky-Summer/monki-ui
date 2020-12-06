@@ -11,7 +11,7 @@
   "include": ["components/"],
   "exclude": [
     "components/**/__tests__",
-    "components/**/demo",
+    "components/**/demos",
     "components/**/style",
     "components/**/*.md"
   ]

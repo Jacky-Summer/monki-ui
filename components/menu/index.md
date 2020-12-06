@@ -11,13 +11,13 @@ nav:
 
 水平的顶部导航菜单。`mode`值为`horizontal`。
 
-<code src="./demo/horizontal.tsx" />
+<code src="./demos/horizontal.tsx" />
 
 ### 内嵌菜单
 
 垂直菜单，子菜单内嵌在菜单区域。`mode`值为`inline`。
 
-<code src="./demo/inline.tsx" />
+<code src="./demos/inline.tsx" />
 
 ### 只展开当前父级菜单
 
@@ -25,13 +25,13 @@ nav:
 
 点击菜单，收起其他展开的所有菜单，保持菜单聚焦简洁。
 
-<code src="./demo/defaultOpenKeys.tsx" />
+<code src="./demos/defaultOpenKeys.tsx" />
 
 ### 切换菜单类型
 
 展示动态切换模式。
 
-<code src="./demo/mode.tsx" />
+<code src="./demos/mode.tsx" />
 
 ### API
 
