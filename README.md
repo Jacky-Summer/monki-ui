@@ -9,6 +9,7 @@
 <div align="center">
 
 [![Build Status](https://travis-ci.com/Jacky-Summer/monki-ui.svg?branch=master)](https://travis-ci.com/Jacky-Summer/monki-ui) [![](https://img.shields.io/npm/v/monki-ui.svg)](https://www.npmjs.com/package/monki-ui) ![](https://img.shields.io/github/license/Jacky-Summer/monki-ui) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) ![](https://img.shields.io/github/stars/Jacky-Summer/monki-ui?style=social)
+![david-dev-image](https://img.shields.io/david/dev/Jacky-Summer/monki-ui?style=flat-square) ![david-image](https://img.shields.io/david/Jacky-Summer/monki-ui?style=flat-square)
 
 Monki UI，是一款基于 Dumi，由 React + TypeScript 开发的个人组件库 🎉。
 
