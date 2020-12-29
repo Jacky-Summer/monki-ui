@@ -11,13 +11,19 @@ nav:
 
 默认选中第一项。
 
+<code src="./demos/base.tsx" />
+
 ### 禁用
 
 禁用某一项。
 
+<code src="./demos/disabled.tsx" />
+
 ### 卡片式页签
 
 另一种样式的页签，不提供对应的垂直样式。
+
+<code src="./demos/type.tsx" />
 
 ### API
 

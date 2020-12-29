@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 export interface Props {
-  label: React.ReactNode
+  tab: React.ReactNode
   disabled?: boolean
 }
 

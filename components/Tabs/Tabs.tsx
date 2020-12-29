@@ -36,7 +36,7 @@ const RootTab: FC<Props> = ({
   const renderNavLinks = () =>
     React.Children.map(children, (child, index) => {
       const childElement = child as FunctionComponentElement<TabPaneProps>
-      const { label, disabled } = childElement.props
+      const { tab, disabled } = childElement.props
       const classes = classNames('mk-tabs-nav-item', {
         'is-active': activeKey === index,
         disabled,
@@ -51,7 +51,7 @@ const RootTab: FC<Props> = ({
             handleClick(e, index, disabled)
           }}
         >
-          {label}
+          {tab}
         </li>
       )
     })
