@@ -47,16 +47,13 @@
   },
   "lint-staged": {
     "*.{js,jsx,md,json}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write",
-      "git add"
+      "prettier --parser=typescript --write"
     ],
-    "*.{less,css}": [
-      "stylelint --fix",
-      "git add"
+    "*.{scss,css}": [
+      "stylelint --fix"
     ]
   },
   "config": {
