@@ -4,14 +4,14 @@ import TabPane, { Props as TabPaneProps } from './TabPane'
 
 export type TabsType = 'line' | 'card'
 
-export interface Props {
+export interface TabsProps {
   className?: string
   defaultActiveKey?: number
   type?: TabsType
   onTabClick?: (selectedKey: number) => void
 }
 
-const RootTab: FC<Props> = ({
+const RootTab: FC<TabsProps> = ({
   className,
   defaultActiveKey,
   type,
@@ -76,7 +76,7 @@ RootTab.defaultProps = {
   type: 'line',
 }
 
-export type ITabComponent = FC<Props> & {
+export type ITabComponent = FC<TabsProps> & {
   TabPane: FC<TabPaneProps>
 }
 

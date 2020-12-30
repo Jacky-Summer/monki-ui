@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs component should render the correct default Tabs 1`] = `
+<RootTab
+  defaultActiveKey={1}
+  onTabClick={[MockFunction]}
+  type="line"
+>
+  <div
+    className="mk-tabs undefined"
+  >
+    <ul
+      className="mk-tabs-nav nav-line"
+    >
+      <li
+        className="mk-tabs-nav-item disabled"
+        key="nav-item-0/.0"
+        onClick={[Function]}
+      >
+        Tab 1
+      </li>
+      <li
+        className="mk-tabs-nav-item is-active"
+        key="nav-item-1/.1"
+        onClick={[Function]}
+      >
+        Tab 2
+      </li>
+      <li
+        className="mk-tabs-nav-item"
+        key="nav-item-2/.2"
+        onClick={[Function]}
+      >
+        Tab 3
+      </li>
+    </ul>
+    <div
+      className="mk-tabs-content"
+    >
+      <TabPane
+        key=".1"
+        tab="Tab 2"
+      >
+        <div
+          className="mk-tab-panel"
+        >
+          Content of Tab Pane 2
+        </div>
+      </TabPane>
+    </div>
+  </div>
+</RootTab>
+`;
