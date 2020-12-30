@@ -1,6 +1,6 @@
 import React from 'react'
-import Tabs from '../Tabs'
-import '../../style'
+import { Tabs } from 'monki-ui'
+import 'monki-ui/dist/index.css'
 
 const { TabPane } = Tabs
 
