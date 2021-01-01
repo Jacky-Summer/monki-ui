@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.4.0...v1.5.0) (2021-01-01)
+
+### Features
+
+- tabs component ([#45](https://github.com/Jacky-Summer/monki-ui/issues/45)) ([d806994](https://github.com/Jacky-Summer/monki-ui/commit/d806994daa07afc50cb2d926033c183d0f253ff8))
+
 ## [1.4.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.2.0...v1.4.0) (2020-12-05)
 
 ### Features
