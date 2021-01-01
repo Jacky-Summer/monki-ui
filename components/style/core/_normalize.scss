@@ -10,9 +10,7 @@
 // Document
 //
 // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -24,11 +22,11 @@
 // 4. Change the default tap highlight to be completely transparent in iOS.
 body {
   margin: 0; // 1
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  font-weight: $font-weight-base;
-  line-height: $line-height-base;
   color: $body-color;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
   text-align: $body-text-align;
   background-color: $body-bg; // 2
   -webkit-text-size-adjust: 100%; // 3
@@ -76,11 +74,11 @@ hr:not([size]) {
 %heading {
   margin-top: 0; // 1
   margin-bottom: $headings-margin-bottom;
+  color: $headings-color;
+  font-weight: $headings-font-weight;
   font-family: $headings-font-family;
   font-style: $headings-font-style;
-  font-weight: $headings-font-weight;
   line-height: $headings-line-height;
-  color: $headings-color;
 }
 
 h1 {
@@ -130,8 +128,7 @@ p {
 // 3. Add explicit cursor to indicate changed behavior.
 // 4. Prevent the text-decoration to be skipped.
 
-abbr[title],
-abbr[data-original-title] {
+abbr[title], abbr[data-original-title] {
   // 1
   text-decoration: underline; // 2
   text-decoration: underline dotted; // 2
@@ -145,22 +142,16 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul {
+ol, ul {
   padding-left: 2rem;
 }
 
-ol,
-ul,
-dl {
+ol, ul, dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
+ol ol, ul ul, ol ul, ul ol {
   margin-bottom: 0;
 }
 
@@ -171,7 +162,7 @@ dt {
 // 1. Undo browser default
 
 dd {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   margin-left: 0; // 1
 }
 
@@ -181,8 +172,7 @@ blockquote {
 
 // Add the correct font weight in Chrome, Edge, and Safari
 
-b,
-strong {
+b, strong {
   font-weight: $font-weight-bolder;
 }
 
@@ -195,8 +185,7 @@ small {
 // Prevent `sub` and `sup` elements from affecting the line height in
 // all browsers.
 
-sub,
-sup {
+sub, sup {
   position: relative;
   font-size: $sub-sup-font-size;
   line-height: 0;
@@ -204,10 +193,10 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 // Links
@@ -228,8 +217,7 @@ a {
 // See https://github.com/twbs/bootstrap/issues/19402
 
 a:not([href]) {
-  &,
-  &:hover {
+  &, &:hover {
     color: inherit;
     text-decoration: none;
   }
@@ -237,42 +225,39 @@ a:not([href]) {
 
 // Code
 
-pre,
-code,
-kbd,
-samp {
-  font-family: $font-family-monospace;
+pre, code, kbd, samp {
   font-size: 1em; // Correct the odd `em` font sizing in all browsers.
+  font-family: $font-family-monospace;
 }
 
 // 1. Remove browser default top margin
 // 2. Reset browser default of `1em` to use `rem`s
 // 3. Don't allow content to break outside
 
-pre {
-  display: block;
-  margin-top: 0; // 1
-  margin-bottom: 1rem; // 2
-  overflow: auto; // 3
-  font-size: $code-font-size;
-  color: $pre-color;
-
-  // Account for some code outputs that place code tags in pre tags
-  code {
-    font-size: inherit;
-    color: inherit;
-    word-break: normal;
-  }
-}
-
 code {
-  font-size: $code-font-size;
   color: $code-color;
+  font-size: $code-font-size;
   word-wrap: break-word;
 
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {
     color: inherit;
+  }
+}
+
+pre {
+  display: block;
+  margin-top: 0; // 1
+  margin-bottom: 1rem; // 2
+  overflow: auto; // 3
+  color: $pre-color;
+  font-size: $code-font-size;
+
+  // Account for some code outputs that place code tags in pre tags
+  code {
+    color: inherit;
+    font-size: inherit;
+    word-break: normal;
   }
 }
 
@@ -307,8 +292,8 @@ table {
 }
 
 caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   color: $text-muted;
   text-align: left;
   caption-side: bottom;
@@ -327,7 +312,7 @@ th {
 
 label {
   display: inline-block; // 1
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 // Remove the default `border-radius` that macOS Chrome adds.
@@ -339,40 +324,24 @@ button {
   border-radius: 0;
 }
 
-// Work around a Firefox/IE bug where the transparent `button` background
-// results in a loss of the default `button` focus styles.
-//
-// Credit: https://github.com/suitcss/base/
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
 // 1. Remove the margin in Firefox and Safari
 
-input,
-button,
-select,
-optgroup,
-textarea {
+input, button, select, optgroup, textarea {
   margin: 0;
-  font-family: sans-serif;
   font-size: 14px;
+  font-family: sans-serif;
   line-height: 1.5715;
 }
 
 // Show the overflow in Edge
 
-button,
-input {
+button, input {
   overflow: visible;
 }
 
 // Remove the inheritance of text transform in Firefox
 
-button,
-select {
+button, select {
   text-transform: none;
 }
 
@@ -397,10 +366,7 @@ select {
 // 2. Correct the inability to style clickable types in iOS and Safari.
 // 3. Opinionated: add "hand" cursor to non-disabled button elements.
 
-button,
-[type="button"], // 1
-[type="reset"],
-[type="submit"] {
+button, [type='button'], [type='reset'], [type='submit'] {
   -webkit-appearance: button; // 2
 
   @if $enable-pointer-cursor-for-buttons {
@@ -423,10 +389,7 @@ button,
 // See https://bugs.webkit.org/show_bug.cgi?id=139848
 // and https://github.com/twbs/bootstrap/issues/11266
 
-input[type='date'],
-input[type='time'],
-input[type='datetime-local'],
-input[type='month'] {
+input[type='date'], input[type='time'], input[type='datetime-local'], input[type='month'] {
   -webkit-appearance: textfield;
 }
 
@@ -447,8 +410,8 @@ textarea {
 
 fieldset {
   min-width: 0; // 1
-  padding: 0; // 2
   margin: 0; // 2
+  padding: 0; // 2
   border: 0; // 2
 }
 
@@ -459,12 +422,12 @@ fieldset {
 legend {
   float: left; // 1
   width: 100%;
-  padding: 0;
   margin-bottom: $legend-margin-bottom;
-  font-size: $legend-font-size;
-  font-weight: $legend-font-weight;
-  line-height: inherit;
+  padding: 0;
   color: inherit; // 2
+  font-weight: $legend-font-weight;
+  font-size: $legend-font-size;
+  line-height: inherit;
   white-space: normal; // 3
 }
 
@@ -516,6 +479,16 @@ progress {
 ::-webkit-file-upload-button {
   font: inherit; // 1
   -webkit-appearance: button; // 2
+}
+
+// Work around a Firefox/IE bug where the transparent `button` background
+// results in a loss of the default `button` focus styles.
+//
+// Credit: https://github.com/suitcss/base/
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 // Correct element displays

@@ -4,10 +4,14 @@ module.exports = {
     'stylelint-config-rational-order',
     'stylelint-config-prettier',
   ],
-  plugins: ['stylelint-order', 'stylelint-config-rational-order/plugin'],
+  plugins: [
+    'stylelint-order',
+    'stylelint-config-rational-order/plugin',
+    'stylelint-scss',
+  ],
   rules: {
-    indentation: 4, // 缩进2个空格
-    'string-quotes': 'double',
+    indentation: 2, // 缩进2个空格
+    'string-quotes': 'single',
     'number-leading-zero': 'never',
     'declaration-block-trailing-semicolon': 'always',
     'max-empty-lines': 1,
@@ -31,6 +35,7 @@ module.exports = {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
   },
+  syntax: 'scss',
   ignoreFiles: [
     'src/**/*',
     'node_modules/**/*',
