@@ -1,49 +1,49 @@
 .mk-tabs-nav {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-    border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
 }
 .mk-tabs-nav-item {
-    display: block;
-    padding: $nav-link-padding-y $nav-link-padding-x;
-    cursor: pointer;
-    &:hover, &:focus {
-        color: $nav-tabs-link-hover-color;
-    }
-    &.disabled {
-        color: $nav-link-disabled-color;
-        background-color: transparent;
-        border-color: transparent;
-        cursor: default;
-        pointer-events: none;
-    }
-    &.is-active {
-        color: $nav-tabs-link-active-color;
-    }
+  display: block;
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  cursor: pointer;
+  &:hover, &:focus {
+    color: $nav-tabs-link-hover-color;
+  }
+  &.disabled {
+    color: $nav-link-disabled-color;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: default;
+    pointer-events: none;
+  }
+  &.is-active {
+    color: $nav-tabs-link-active-color;
+  }
 }
 .nav-line {
-    .mk-tabs-nav-item {
-        &.is-active {
-            border-bottom: $nav-tabs-border-width * 2 solid $nav-tabs-link-active-color;
-        }
+  .mk-tabs-nav-item {
+    &.is-active {
+      border-bottom: $nav-tabs-border-width * 2 solid $nav-tabs-link-active-color;
     }
+  }
 }
 
 .nav-card {
-    .mk-tabs-nav-item {
-        margin-bottom: -$nav-tabs-border-width;
-        border: $nav-tabs-border-width solid transparent;
-        &.is-active {
-            @include border-top-radius($nav-tabs-border-radius);
-            background-color: $nav-tabs-link-active-bg;
-            border-color: $nav-tabs-link-active-border-color;
-        }
+  .mk-tabs-nav-item {
+    margin-bottom: -$nav-tabs-border-width;
+    border: $nav-tabs-border-width solid transparent;
+    &.is-active {
+      @include border-top-radius($nav-tabs-border-radius);
+      background-color: $nav-tabs-link-active-bg;
+      border-color: $nav-tabs-link-active-border-color;
     }
+  }
 }
 
 .mk-tabs-content {
-    margin-top: $nav-tabs-content-margin;
+  margin-top: $nav-tabs-content-margin;
 }
