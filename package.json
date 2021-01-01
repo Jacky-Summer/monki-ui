@@ -1,6 +1,6 @@
 {
   "name": "monki-ui",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "React components library",
   "title": "Monki UI",
   "author": "JackySummer",
@@ -47,16 +47,13 @@
   },
   "lint-staged": {
     "*.{js,jsx,md,json}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write",
-      "git add"
+      "prettier --parser=typescript --write"
     ],
-    "*.{less,css}": [
-      "stylelint --fix",
-      "git add"
+    "*.{scss,css}": [
+      "stylelint --fix"
     ]
   },
   "config": {

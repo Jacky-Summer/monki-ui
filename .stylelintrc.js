@@ -12,10 +12,7 @@ module.exports = {
     'declaration-block-trailing-semicolon': 'always',
     'max-empty-lines': 1,
     'block-closing-brace-empty-line-before': ['never'],
-    'declaration-empty-line-before': [
-      'never',
-      { ignore: ['after-declaration'] },
-    ],
+    'declaration-empty-line-before': ['never', { ignore: ['after-declaration'] }],
     'length-zero-no-unit': true,
     'no-eol-whitespace': true,
     'no-missing-end-of-source-newline': true,
@@ -31,6 +28,8 @@ module.exports = {
     'selector-combinator-space-after': 'always',
     'selector-list-comma-space-after': 'always',
     'selector-descendant-combinator-no-non-space': true,
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': true,
   },
   ignoreFiles: [
     'src/**/*',
