@@ -16,6 +16,8 @@ nav:
 
 ### 基本使用
 
+<code src="./demos/base.tsx" />
+
 ### 三种大小
 
 输入框定义了三种尺寸 size（大`lg`、默认`md`、小`sm`）
