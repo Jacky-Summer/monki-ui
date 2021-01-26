@@ -22,12 +22,18 @@ nav:
 
 输入框定义了三种尺寸 size（大`lg`、默认`md`、小`sm`）
 
+<code src="./demos/size.tsx" />
+
 ### 禁用
 
-设置禁用状态，默认为 false
+设置禁用状态 `disabled`，默认为 false
+
+<code src="./demos/disabled.tsx" />
 
 ### 前缀与后缀
 
 在输入框上添加前缀`prefix`或后缀`suffix`图标。
+
+<code src="./demos/prefix-suffix.tsx" />
 
 ### API

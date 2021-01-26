@@ -15,7 +15,11 @@ export interface InputProps
 const Input: FC<InputProps> = forwardRef<HTMLInputElement, InputProps>(
   ({ size, disabled, prefix, suffix, style, onChange, ...restProps }, ref) => {
     const classes = classNames('mk-input-wrapper', {
-      disabled: '',
+      [`input-size-${size}`]: size,
+      'is-disabled': disabled,
+      'input-group': prefix || suffix,
+      'input-group-suffix': !!suffix,
+      'input-group-prefix': !!prefix,
     })
 
     return (
