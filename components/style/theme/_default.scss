@@ -45,21 +45,21 @@ $warning-100: $yellow-100 !default;
 $danger-100: $red-100 !default;
 
 $theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark,
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
 );
 
-$font-family-sans-serif: "sans-serif", -apple-system, blinkmacsystemfont, "Segoe UI",
-    roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono",
-    "Courier New", monospace !default;
+$font-family-sans-serif: 'sans-serif', -apple-system, blinkmacsystemfont, 'Segoe UI',
+  roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono',
+  'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
 // 字体大小
@@ -252,7 +252,7 @@ $btn-border-radius-md: $border-radius-md !default;
 $btn-border-radius-sm: $border-radius-sm !default;
 
 $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out,
-    border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+  border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
 // menu
 $menu-border-width: $border-width !default;

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should render prefix and suffix element on prefix/suffix property 1`] = `
+<ForwardRef
+  onChange={[MockFunction]}
+  placeholder="this is input"
+  prefix="https://"
+  suffix=".com"
+>
+  <div
+    className="mk-input-wrapper input-group input-group-suffix input-group-prefix"
+  >
+    <div
+      className="mk-input-group-prefix"
+    >
+      https://
+    </div>
+    <input
+      className="mk-input-inner"
+      placeholder="this is input"
+    />
+    <div
+      className="mk-input-group-suffix"
+    >
+      .com
+    </div>
+  </div>
+</ForwardRef>
+`;
+
+exports[`Input component should render the correct default Input 1`] = `
+<ForwardRef
+  onChange={[MockFunction]}
+  placeholder="this is input"
+>
+  <div
+    className="mk-input-wrapper"
+  >
+    <input
+      className="mk-input-inner"
+      placeholder="this is input"
+    />
+  </div>
+</ForwardRef>
+`;
+
+exports[`Input component should render the disabled Input on disabled property 1`] = `
+<ForwardRef
+  disabled={true}
+  onChange={[MockFunction]}
+  placeholder="this is input"
+>
+  <div
+    className="mk-input-wrapper is-disabled"
+  >
+    <input
+      className="mk-input-inner"
+      disabled={true}
+      placeholder="this is input"
+    />
+  </div>
+</ForwardRef>
+`;
+
+exports[`Input component should support size 1`] = `
+<ForwardRef
+  onChange={[MockFunction]}
+  placeholder="this is input"
+  size="lg"
+>
+  <div
+    className="mk-input-wrapper input-size-lg"
+  >
+    <input
+      className="mk-input-inner"
+      placeholder="this is input"
+    />
+  </div>
+</ForwardRef>
+`;

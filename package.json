@@ -1,6 +1,6 @@
 {
   "name": "monki-ui",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "React components library",
   "title": "Monki UI",
   "author": "JackySummer",
@@ -31,10 +31,10 @@
     "build:lib": "yarn clean && yarn build-ts && yarn build-css",
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "dart-sass ./components/style/index.scss ./dist/index.css",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,scss,md,json}\"",
     "lint": "yarn lint:eslint && yarn lint:stylelint",
     "lint:eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js ./components --fix",
-    "lint:stylelint": "stylelint **/*.{html,css,less} --fix",
+    "lint:stylelint": "stylelint **/*.{html,css,scss} --fix",
     "typecheck": "tsc --noEmit -p ./tsconfig.json",
     "commit": "git-cz",
     "bump-version": "standard-version --skip.commit --skip.tag"
@@ -102,6 +102,7 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
     "ts-jest": "^26.4.3",
     "typescript": "^4.0.3",
     "yorkie": "^2.0.0"

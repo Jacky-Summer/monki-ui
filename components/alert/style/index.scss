@@ -8,8 +8,8 @@ $alert-colors: (
 );
 .mk-alert {
   position: relative;
-  padding: $alert-padding-y $alert-padding-x;
   margin-bottom: $alert-margin-bottom;
+  padding: $alert-padding-y $alert-padding-x;
   border: $alert-border-width solid transparent;
   border-radius: $alert-border-radius;
   .mk-alert-close {
@@ -23,8 +23,8 @@ $alert-colors: (
   }
 
   .mk-alert-desc {
-    font-size: $alert-description-font-size;
     margin: $alert-description-top-margin 0 0;
+    font-size: $alert-description-font-size;
   }
 }
 @each $color, $value in $alert-colors {

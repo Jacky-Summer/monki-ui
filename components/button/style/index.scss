@@ -3,28 +3,22 @@
 .mk-btn {
   position: relative;
   display: inline-block;
+  color: $body-color;
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
-  color: $body-color;
   white-space: nowrap;
   text-align: center;
   vertical-align: middle;
   background-image: none;
   border: $btn-border-width solid transparent;
-  @include button-size(
-    $btn-padding-y,
-    $btn-padding-x,
-    $btn-font-size,
-    $border-radius
-  );
   box-shadow: $btn-box-shadow;
   cursor: pointer;
   transition: $btn-transition;
-  &.disabled,
-  &[disabled] {
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $border-radius);
+  &.disabled, &[disabled] {
+    box-shadow: none;
     cursor: not-allowed;
     opacity: $btn-disabled-opacity;
-    box-shadow: none;
     > * {
       pointer-events: none;
     }
@@ -32,14 +26,7 @@
 }
 // type
 .mk-btn-default {
-  @include button-style(
-    $white,
-    $gray-400,
-    $body-color,
-    $white,
-    $primary,
-    $primary
-  );
+  @include button-style($white, $gray-400, $body-color, $white, $primary, $primary);
 }
 
 .mk-btn-primary {
@@ -64,34 +51,25 @@
 }
 
 .mk-btn-dashed {
-  @include button-style(
-    $white,
-    $gray-400,
-    $body-color,
-    $white,
-    $primary,
-    $primary
-  );
+  @include button-style($white, $gray-400, $body-color, $white, $primary, $primary);
   border-style: dotted;
 }
 
 .mk-btn-link {
-  font-weight: $font-weight-normal;
   color: $btn-link-color;
+  font-weight: $font-weight-normal;
   text-decoration: $link-decoration;
-  box-shadow: none;
   background-color: transparent;
+  box-shadow: none;
   &:hover {
     color: $btn-link-hover-color;
     text-decoration: $link-hover-decoration;
   }
-  &:focus,
-  &.focus {
+  &:focus, &.focus {
     text-decoration: $link-hover-decoration;
     box-shadow: none;
   }
-  &:disabled,
-  &.disabled {
+  &:disabled, &.disabled {
     color: $btn-link-disabled-color;
     pointer-events: none;
   }
