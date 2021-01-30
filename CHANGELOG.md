@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.5.0...v1.6.0) (2021-01-30)
+
+### Features
+
+- add input component ([#52](https://github.com/Jacky-Summer/monki-ui/issues/52)) ([1cab7a1](https://github.com/Jacky-Summer/monki-ui/commit/1cab7a1d5b4708f5b1e55dfd2b8c78a74efff480))
+
+### Bug Fixes
+
+- stylelint scss strict rules to check ([#51](https://github.com/Jacky-Summer/monki-ui/issues/51)) ([603d0b7](https://github.com/Jacky-Summer/monki-ui/commit/603d0b7a81c391c988d0eb1c7136fd0f8f113c98))
+
 ## [1.5.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.4.0...v1.5.0) (2021-01-01)
 
 ### Features
