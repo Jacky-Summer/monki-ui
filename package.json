@@ -37,7 +37,8 @@
     "lint:stylelint": "stylelint **/*.{html,css,scss} --fix",
     "typecheck": "tsc --noEmit -p ./tsconfig.json",
     "commit": "git-cz",
-    "bump-version": "standard-version --skip.commit --skip.tag"
+    "bump-version": "standard-version --message 'chore(release): %s\n\n[skip publish]' --no-verify",
+    "bump-version:prerelease": "yarn bump-version --skip.changelog=true --skip.commit=true --skip.tag=true --prerelease ${TRAVIS_BUILD_NUMBER}"
   },
   "husky": {
     "hooks": {
