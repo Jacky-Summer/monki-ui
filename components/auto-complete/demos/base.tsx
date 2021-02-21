@@ -1,6 +1,5 @@
 import React from 'react'
 import { AutoComplete } from 'monki-ui'
-import { DataSourceType } from 'monki-ui/dist/auto-complete/autoComplete'
 import 'monki-ui/dist/index.css'
 
 export default () => {
