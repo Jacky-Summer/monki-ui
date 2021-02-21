@@ -60,18 +60,20 @@ import 'monki-ui/dist/index.css'
 
 🚧 开发中......
 
-- 开发 AutoComplete 组件
+- [ ] 开发 Select 组件
+- [ ] 开发 Upload 组件
 
 ✨ 已完成
 
-- CSS 样式解决方案、初始化文件结构、UI 设计
-- Button 组件开发与测试
-- 增加 Travis CI
-- 创建入口文件，并发布到 npm
-- 开发 Alert 组件
-- 开发 Menu 组件
-- 开发 Tab 组件
-- 开发 Input 组件
+- [x] CSS 样式解决方案、初始化文件结构、UI 设计
+- [x] Button 组件开发与测试
+- [x] 增加 Travis CI
+- [x] 创建入口文件，并发布到 npm
+- [x] 开发 Alert 组件
+- [x] 开发 Menu 组件
+- [x] 开发 Tab 组件
+- [x] 开发 Input 组件
+- [x] 开发 AutoComplete 组件
 
 ## 开源协议
 
