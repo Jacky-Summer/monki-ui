@@ -23,7 +23,15 @@ nav:
 
 ### 基本使用
 
-### 复杂数据
+<code src="./demos/base.tsx" />
+
+### 自定义渲染下拉选项
+
+<code src="./demos/renderOption.tsx" />
+
+### ajax 请求下拉选项
+
+<code src="./demos/ajaxSearch.tsx" />
 
 ### API
 
