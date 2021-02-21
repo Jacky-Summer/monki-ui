@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component should render prefix and suffix element on prefix/suffix property 1`] = `
-<ForwardRef
+<Input
   onChange={[MockFunction]}
   placeholder="this is input"
   prefix="https://"
@@ -17,6 +17,7 @@ exports[`Input component should render prefix and suffix element on prefix/suffi
     </div>
     <input
       className="mk-input-inner"
+      onChange={[MockFunction]}
       placeholder="this is input"
     />
     <div
@@ -25,11 +26,11 @@ exports[`Input component should render prefix and suffix element on prefix/suffi
       .com
     </div>
   </div>
-</ForwardRef>
+</Input>
 `;
 
 exports[`Input component should render the correct default Input 1`] = `
-<ForwardRef
+<Input
   onChange={[MockFunction]}
   placeholder="this is input"
 >
@@ -38,14 +39,15 @@ exports[`Input component should render the correct default Input 1`] = `
   >
     <input
       className="mk-input-inner"
+      onChange={[MockFunction]}
       placeholder="this is input"
     />
   </div>
-</ForwardRef>
+</Input>
 `;
 
 exports[`Input component should render the disabled Input on disabled property 1`] = `
-<ForwardRef
+<Input
   disabled={true}
   onChange={[MockFunction]}
   placeholder="this is input"
@@ -56,14 +58,15 @@ exports[`Input component should render the disabled Input on disabled property 1
     <input
       className="mk-input-inner"
       disabled={true}
+      onChange={[MockFunction]}
       placeholder="this is input"
     />
   </div>
-</ForwardRef>
+</Input>
 `;
 
 exports[`Input component should support size 1`] = `
-<ForwardRef
+<Input
   onChange={[MockFunction]}
   placeholder="this is input"
   size="lg"
@@ -73,8 +76,9 @@ exports[`Input component should support size 1`] = `
   >
     <input
       className="mk-input-inner"
+      onChange={[MockFunction]}
       placeholder="this is input"
     />
   </div>
-</ForwardRef>
+</Input>
 `;
