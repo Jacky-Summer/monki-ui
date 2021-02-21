@@ -12,24 +12,29 @@ export interface InputProps
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const Input: FC<InputProps> = forwardRef<HTMLInputElement, InputProps>(
-  ({ size, disabled, prefix, suffix, style, onChange, ...restProps }, ref) => {
-    const classes = classNames('mk-input-wrapper', {
-      [`input-size-${size}`]: size,
-      'is-disabled': disabled,
-      'input-group': prefix || suffix,
-      'input-group-suffix': !!suffix,
-      'input-group-prefix': !!prefix,
-    })
+const Input: FC<InputProps> = ({
+  size,
+  disabled,
+  prefix,
+  suffix,
+  style,
+  ...restProps
+}) => {
+  const classes = classNames('mk-input-wrapper', {
+    [`input-size-${size}`]: size,
+    'is-disabled': disabled,
+    'input-group': prefix || suffix,
+    'input-group-suffix': !!suffix,
+    'input-group-prefix': !!prefix,
+  })
 
-    return (
-      <div className={classes} style={style}>
-        {prefix && <div className="mk-input-group-prefix">{prefix}</div>}
-        <input ref={ref} className="mk-input-inner" disabled={disabled} {...restProps} />
-        {suffix && <div className="mk-input-group-suffix">{suffix}</div>}
-      </div>
-    )
-  },
-)
+  return (
+    <div className={classes} style={style}>
+      {prefix && <div className="mk-input-group-prefix">{prefix}</div>}
+      <input className="mk-input-inner" disabled={disabled} {...restProps} />
+      {suffix && <div className="mk-input-group-suffix">{suffix}</div>}
+    </div>
+  )
+}
 
 export default Input
