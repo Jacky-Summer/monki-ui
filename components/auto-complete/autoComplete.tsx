@@ -12,6 +12,7 @@ import { LoadingOutlined } from '@ant-design/icons'
 import Transition from '../transition'
 import Input, { InputProps } from '../input/input'
 import useDebounce from '../../hooks/useDebounce'
+import useClickOutside from '../../hooks/useClickOutside'
 
 interface DataSourceObject {
   value: string
@@ -41,10 +42,18 @@ const AutoComplete: FC<AutoCompleteProps> = ({
   const [options, setOptions] = useState<DataSourceType[]>([])
   const [highlightIndex, setHighlightIndex] = useState(-1)
   const triggerSearch = useRef(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
   const debouncedValue = useDebounce(inputValue, 300)
+
+  // 当点击到AutoComplete组件外的区域，会自动关闭下拉框选项部分
+  useClickOutside(dropdownRef, () => {
+    setOptions([])
+    setShowDropdown(false)
+  })
 
   useEffect(() => {
     if (debouncedValue && triggerSearch.current) {
+      setOptions([])
       const result = onSearch(debouncedValue)
       if (result instanceof Promise) {
         setIsLoading(true)
@@ -62,8 +71,9 @@ const AutoComplete: FC<AutoCompleteProps> = ({
         }
       }
     } else {
-      setOptions([])
+      setShowDropdown(false)
     }
+    setHighlightIndex(-1)
   }, [debouncedValue, onSearch])
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -118,7 +128,6 @@ const AutoComplete: FC<AutoCompleteProps> = ({
         break
     }
   }
-
   const generateDropdown = () => (
     <Transition in={showDropdown || isLoading} animation="zoom-in-top" timeout={300}>
       <ul className="mk-suggestion-list">
@@ -143,7 +152,7 @@ const AutoComplete: FC<AutoCompleteProps> = ({
   )
 
   return (
-    <div className="mk-auto-complete">
+    <div className="mk-auto-complete" ref={dropdownRef}>
       <Input
         value={inputValue}
         onChange={handleChange}
