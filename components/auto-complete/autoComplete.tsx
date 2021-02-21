@@ -11,8 +11,8 @@ import classNames from 'classnames'
 import { LoadingOutlined } from '@ant-design/icons'
 import Transition from '../transition'
 import Input, { InputProps } from '../input/input'
-import useDebounce from '../../hooks/useDebounce'
-import useClickOutside from '../../hooks/useClickOutside'
+import useDebounce from '../hooks/useDebounce'
+import useClickOutside from '../hooks/useClickOutside'
 
 interface DataSourceObject {
   value: string
