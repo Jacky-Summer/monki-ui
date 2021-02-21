@@ -1,6 +1,8 @@
 import React from 'react'
-import AutoComplete, { DataSourceType } from '../autoComplete'
-import '../../style'
+import { AutoComplete } from 'monki-ui'
+import { DataSourceType } from 'monki-ui/dist/auto-complete/autoComplete'
+
+import 'monki-ui/dist/index.css'
 
 interface GithubUserProps {
   login: string

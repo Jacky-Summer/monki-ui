@@ -1,6 +1,7 @@
 import React from 'react'
-import AutoComplete from '..'
-import '../../style'
+import { AutoComplete } from 'monki-ui'
+import { DataSourceType } from 'monki-ui/dist/auto-complete/autoComplete'
+import 'monki-ui/dist/index.css'
 
 export default () => {
   const strArr = ['a', 'ab', 'aaa', 'b', 'bb', 'bbb', 'c', 'cc', 'ccc', 'd', 'dd', 'ddd']
