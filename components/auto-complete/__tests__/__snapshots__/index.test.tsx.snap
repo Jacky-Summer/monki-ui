@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoComplete test basic AutoComplete behavior 1`] = `
+<AutoComplete
+  onSearch={[Function]}
+  onSelect={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "number": 11,
+            "value": "ab",
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  placeholder="This is a placeholder"
+>
+  <div
+    className="mk-auto-complete"
+  >
+    <Input
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="This is a placeholder"
+      value="ab"
+    >
+      <div
+        className="mk-input-wrapper"
+      >
+        <input
+          className="mk-input-inner"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="This is a placeholder"
+          value="ab"
+        />
+      </div>
+    </Input>
+    <Transition
+      animation="zoom-in-top"
+      appear={true}
+      in={false}
+      timeout={300}
+      unmountOnExit={true}
+      wrapper={false}
+    >
+      <CSSTransition
+        appear={true}
+        classNames="zoom-in-top"
+        in={false}
+        timeout={300}
+        unmountOnExit={true}
+      >
+        <Transition
+          appear={true}
+          enter={true}
+          exit={true}
+          in={false}
+          mountOnEnter={false}
+          onEnter={[Function]}
+          onEntered={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          onExiting={[Function]}
+          timeout={300}
+          unmountOnExit={true}
+        >
+          <ul
+            className="mk-suggestion-list"
+          >
+            <li
+              className="suggestion-item"
+              key="0"
+              onClick={[Function]}
+            >
+              ab
+            </li>
+            <li
+              className="suggestion-item"
+              key="1"
+              onClick={[Function]}
+            >
+              abc
+            </li>
+          </ul>
+        </Transition>
+      </CSSTransition>
+    </Transition>
+  </div>
+</AutoComplete>
+`;
