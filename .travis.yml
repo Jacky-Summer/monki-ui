@@ -33,15 +33,18 @@ jobs:
       if: branch = master AND commit_message !~ /\[skip publish\]/
 
       before_deploy:
-        - git config user.email "builds@travis-ci.com"
-        - git config user.name "Travis CI"
-        - yarn bump-version
-        - git push --verbose --no-verify --follow-tags ${OWNER}${GH_TOKEN}@${GH_REF} HEAD:master
-        - yarn build
-
+        - >
+          if ! [ "${BEFORE_DEPLOY_RUN}" ]; then
+            export BEFORE_DEPLOY_RUN=1;
+            git config user.email "builds@travis-ci.com"
+            git config user.name "Travis CI"
+            yarn bump-version
+            git push --verbose --no-verify --follow-tags ${OWNER}${GH_TOKEN}@${GH_REF} HEAD:master
+            yarn build
+          fi
       deploy:
         - provider: pages
-          github_token: $GITHUB_TOKEN
+          github_token: $GH_TOKEN
           skip_cleanup: true
           keep_history: true
           local_dir: docs-dist

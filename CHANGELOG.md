@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.2](https://github.com/Jacky-Summer/monki-ui/compare/v1.7.1...v1.7.2) (2021-02-28)
+
+
+### Bug Fixes
+
+* before deploy exec twice ([#68](https://github.com/Jacky-Summer/monki-ui/issues/68)) ([e009221](https://github.com/Jacky-Summer/monki-ui/commit/e00922158a4e223b34e69b039d2dbc149e55c7b6))
+
 ### [1.7.1](https://github.com/Jacky-Summer/monki-ui/compare/v1.7.0...v1.7.1) (2021-02-28)
 
 ## [1.7.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.6.0...v1.7.0) (2021-02-28)
