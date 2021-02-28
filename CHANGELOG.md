@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.6.0...v1.7.0) (2021-02-28)
+
+
+### Features
+
+* add AutoComplete component ([#57](https://github.com/Jacky-Summer/monki-ui/issues/57)) ([b3523d3](https://github.com/Jacky-Summer/monki-ui/commit/b3523d38303411bbb86d5fc5b0ea9c381470a01a))
+
 ## [1.6.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.5.0...v1.6.0) (2021-01-30)
 
 ### Features
