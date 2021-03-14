@@ -1,0 +1,39 @@
+@import 'mixins';
+
+.mk-tag {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-radius: 3px;
+  @include tag-size($tag-padding-y, $tag-padding-x, $tag-font-size);
+
+  .tag-text {
+    vertical-align: middle;
+  }
+
+  .tag-close-icon {
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+}
+
+.tag-lg {
+  @include tag-size($tag-padding-y-lg, $tag-padding-x-lg, $tag-font-size-lg);
+}
+.tag-sm {
+  @include tag-size($tag-padding-y-sm, $tag-padding-x-sm, $tag-font-size-sm);
+}
+
+@each $key, $val in $theme-colors {
+  .tag-#{$key} {
+    color: $val;
+    background-color: rgba($val, .1);
+    border: 1px solid rgba($val, .2);
+
+    .mk-icon {
+      &:hover {
+        color: darken($val, 10%);
+      }
+    }
+  }
+}
