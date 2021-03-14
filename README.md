@@ -74,6 +74,7 @@ import 'monki-ui/dist/index.css'
 - [x] 开发 Tab 组件
 - [x] 开发 Input 组件
 - [x] 开发 AutoComplete 组件
+- [x] 开发 Tag 组件
 
 ## 开源协议
 
