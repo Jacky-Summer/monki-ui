@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.7.2...v1.8.0) (2021-03-14)
+
+
+### Features
+
+* tag component ([#70](https://github.com/Jacky-Summer/monki-ui/issues/70)) ([c1bd1eb](https://github.com/Jacky-Summer/monki-ui/commit/c1bd1ebcddea4b525df8dfef4659517ee2ee03b7))
+
 ### [1.7.2](https://github.com/Jacky-Summer/monki-ui/compare/v1.7.1...v1.7.2) (2021-02-28)
 
 
