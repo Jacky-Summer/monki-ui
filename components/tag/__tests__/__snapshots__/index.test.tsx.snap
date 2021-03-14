@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag render normal Tag correctly 1`] = `
+<Tag
+  closable={false}
+  color="primary"
+  text="Tag1"
+>
+  <Transition
+    animation="zoom-in-left"
+    appear={true}
+    in={true}
+    timeout={300}
+    unmountOnExit={true}
+    wrapper={false}
+  >
+    <CSSTransition
+      appear={true}
+      classNames="zoom-in-left"
+      in={true}
+      timeout={300}
+      unmountOnExit={true}
+    >
+      <Transition
+        appear={true}
+        enter={true}
+        exit={true}
+        in={true}
+        mountOnEnter={false}
+        onEnter={[Function]}
+        onEntered={[Function]}
+        onEntering={[Function]}
+        onExit={[Function]}
+        onExited={[Function]}
+        onExiting={[Function]}
+        timeout={300}
+        unmountOnExit={true}
+      >
+        <div
+          className="mk-tag tag-primary"
+        >
+          <span
+            className="tag-text"
+          >
+            Tag1
+          </span>
+        </div>
+      </Transition>
+    </CSSTransition>
+  </Transition>
+</Tag>
+`;
