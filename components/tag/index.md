@@ -16,9 +16,15 @@ nav:
 
 ## 基本
 
+<code src="./demos/base.tsx" />
+
 ## 颜色
 
+<code src="./demos/color.tsx" />
+
 ## 尺寸
+
+<code src="./demos/size.tsx" />
 
 ## API
 

@@ -341,3 +341,17 @@ $nav-tabs-link-active-color: $primary !default;
 $nav-tabs-link-active-bg: $body-bg !default;
 $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
 $nav-tabs-content-margin: 1rem !default;
+
+// Tag
+
+$tag-padding-y: .04rem !default;
+$tag-padding-x: .45rem !default;
+$tag-font-size: $font-size-base !default;
+
+$tag-padding-y-sm: 1px !default;
+$tag-padding-x-sm: 3px !default;
+$tag-font-size-sm: $font-size-sm !default;
+
+$tag-padding-y-lg: .12rem !default;
+$tag-padding-x-lg: .6rem !default;
+$tag-font-size-lg: $font-size-base !default;
