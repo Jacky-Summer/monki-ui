@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react'
 import classNames from 'classnames'
 import CloseOutlined from '@ant-design/icons/CloseOutlined'
-import Transition from '../Transition'
+import Transition from '../transition'
 
 export type ColorProps = 'primary' | 'success' | 'warning' | 'danger'
 
