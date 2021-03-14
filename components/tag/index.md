@@ -28,10 +28,10 @@ nav:
 
 ## API
 
-| 参数     | 说明             | 类型        | 默认值 |
-| -------- | ---------------- | ----------- | ------ |
-| closable | 标签是否可以关闭 | boolean     | false  |
-| color    | 标签色           | string      | -      |
-| text     | Tag 的文本       | string      | -      |
-| size     | Tag 的尺寸       | string      | -      |
-| onClose  | 关闭时的回调     | (e) => void | -      |
+| 参数     | 说明             | 类型       | 默认值 |
+| -------- | ---------------- | ---------- | ------ |
+| closable | 标签是否可以关闭 | boolean    | false  |
+| color    | 标签色           | string     | -      |
+| text     | Tag 的文本       | string     | -      |
+| size     | Tag 的尺寸       | string     | -      |
+| onClose  | 关闭时的回调     | () => void | -      |
