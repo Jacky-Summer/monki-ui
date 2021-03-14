@@ -1,6 +1,6 @@
 import React from 'react'
-import Tag from '..'
-import '../../style'
+import { Tag } from 'monki-ui'
+import 'monki-ui/dist/index.css'
 
 export default () => (
   <>
