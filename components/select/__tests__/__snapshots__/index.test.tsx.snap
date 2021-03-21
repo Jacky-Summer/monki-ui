@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component should render the correct Select component 1`] = `
+<RootSelect
+  defaultValue=""
+  name="mk-select"
+  onChange={[MockFunction]}
+  onVisibleChange={[MockFunction]}
+  placeholder="test"
+>
+  <div
+    className="mk-select"
+  >
+    <div
+      className="mk-select-input"
+      onClick={[Function]}
+    >
+      <ForwardRef
+        autoComplete="off"
+        icon={<ForwardRef(DownOutlined) />}
+        name="mk-select"
+        onChange={[Function]}
+        placeholder="test"
+        value=""
+      >
+        <div
+          className="mk-input-wrapper"
+        >
+          <div
+            className="icon-wrapper"
+          >
+            <ForwardRef(DownOutlined)>
+              <AntdIcon
+                icon={
+                  Object {
+                    "icon": Object {
+                      "attrs": Object {
+                        "focusable": "false",
+                        "viewBox": "64 64 896 896",
+                      },
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                          },
+                          "tag": "path",
+                        },
+                      ],
+                      "tag": "svg",
+                    },
+                    "name": "down",
+                    "theme": "outlined",
+                  }
+                }
+              >
+                <span
+                  aria-label="down"
+                  className="anticon anticon-down"
+                  role="img"
+                >
+                  <IconReact
+                    icon={
+                      Object {
+                        "icon": Object {
+                          "attrs": Object {
+                            "focusable": "false",
+                            "viewBox": "64 64 896 896",
+                          },
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z",
+                              },
+                              "tag": "path",
+                            },
+                          ],
+                          "tag": "svg",
+                        },
+                        "name": "down",
+                        "theme": "outlined",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="down"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      key="svg-down"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        key="svg-down-svg-0"
+                      />
+                    </svg>
+                  </IconReact>
+                </span>
+              </AntdIcon>
+            </ForwardRef(DownOutlined)>
+          </div>
+          <input
+            autoComplete="off"
+            className="mk-input-inner"
+            name="mk-select"
+            onChange={[Function]}
+            placeholder="test"
+            value=""
+          />
+        </div>
+      </ForwardRef>
+    </div>
+    <Transition
+      animation="zoom-in-top"
+      appear={true}
+      in={false}
+      timeout={300}
+      unmountOnExit={true}
+      wrapper={false}
+    >
+      <CSSTransition
+        appear={true}
+        classNames="zoom-in-top"
+        in={false}
+        timeout={300}
+        unmountOnExit={true}
+      >
+        <Transition
+          appear={true}
+          enter={true}
+          exit={true}
+          in={false}
+          mountOnEnter={false}
+          onEnter={[Function]}
+          onEntered={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          onExiting={[Function]}
+          timeout={300}
+          unmountOnExit={true}
+        />
+      </CSSTransition>
+    </Transition>
+  </div>
+</RootSelect>
+`;
