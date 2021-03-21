@@ -9,11 +9,12 @@ export interface InputProps
   disabled?: boolean
   prefix?: ReactNode // 前缀
   suffix?: ReactNode // 后缀
+  icon?: ReactNode // 图标
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const { size, disabled, prefix, suffix, style, ...restProps } = props
+  const { size, disabled, prefix, suffix, style, icon, ...restProps } = props
   const classes = classNames('mk-input-wrapper', {
     [`input-size-${size}`]: size,
     'is-disabled': disabled,
@@ -25,6 +26,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   return (
     <div className={classes} style={style}>
       {prefix && <div className="mk-input-group-prefix">{prefix}</div>}
+      {icon && <div className="icon-wrapper">{icon}</div>}
       <input ref={ref} className="mk-input-inner" disabled={disabled} {...restProps} />
       {suffix && <div className="mk-input-group-suffix">{suffix}</div>}
     </div>
