@@ -36,6 +36,12 @@ nav:
 
 <code src="./demos/prefix-suffix.tsx" />
 
+### 图标
+
+如添加一个向下箭头的图标
+
+<code src="./demos/icon.tsx" />
+
 ### API
 
 | 参数     | 说明                                           | 类型                 | 默认值 |
