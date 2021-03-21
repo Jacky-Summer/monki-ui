@@ -1,6 +1,6 @@
 import React from 'react'
-import Select from '..'
-import '../../style'
+import { Select } from 'monki-ui'
+import 'monki-ui/dist/index.css'
 
 export default () => (
   <div>
