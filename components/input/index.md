@@ -36,6 +36,12 @@ nav:
 
 <code src="./demos/prefix-suffix.tsx" />
 
+### 图标
+
+如添加一个向下箭头的图标
+
+<code src="./demos/icon.tsx" />
+
 ### API
 
 | 参数     | 说明                                           | 类型                 | 默认值 |
@@ -47,6 +53,7 @@ nav:
 | suffix   | 带有后缀图标的 input                           | ReactNode            | -      |  |
 | type     | 声明 input 类型，同原生 input 标签的 type 属性 | string               | `text` |
 | value    | 输入框内容                                     | string               | -      |
+| icon     | 图标                                           | ReactNode            | -      |
 | onChange | 输入框内容变化时的回调                         | function(e)          | -      |
 
 Input 的其他属性和 React 自带的 [input](https://facebook.github.io/react/docs/events.html#supported-events) 一致。
