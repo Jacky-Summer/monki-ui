@@ -1,4 +1,4 @@
-import React, { FC, InputHTMLAttributes, ReactNode, forwardRef } from 'react'
+import React, { InputHTMLAttributes, ReactNode, forwardRef } from 'react'
 import classNames from 'classnames'
 
 export type InputSize = 'lg' | 'md' | 'sm'
@@ -12,14 +12,8 @@ export interface InputProps
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const Input: FC<InputProps> = ({
-  size,
-  disabled,
-  prefix,
-  suffix,
-  style,
-  ...restProps
-}) => {
+const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  const { size, disabled, prefix, suffix, style, ...restProps } = props
   const classes = classNames('mk-input-wrapper', {
     [`input-size-${size}`]: size,
     'is-disabled': disabled,
@@ -31,10 +25,10 @@ const Input: FC<InputProps> = ({
   return (
     <div className={classes} style={style}>
       {prefix && <div className="mk-input-group-prefix">{prefix}</div>}
-      <input className="mk-input-inner" disabled={disabled} {...restProps} />
+      <input ref={ref} className="mk-input-inner" disabled={disabled} {...restProps} />
       {suffix && <div className="mk-input-group-suffix">{suffix}</div>}
     </div>
   )
-}
+})
 
 export default Input
