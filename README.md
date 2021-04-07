@@ -15,7 +15,7 @@ Monki UI，是一款基于 Dumi，由 React + TypeScript 开发的个人组件�
 
 </div>
 
-该开源项目是我为进阶 React，同时探索组件库设计开发思路所做的，故不可用于生产环境。由于个人设计能力有限，故 UI 设计方面会大量参考[Ant Design 组件库](https://ant.design/index-cn)，同时组件的使用方式也会参照 Ant Design 进行实现。如果你也想学习组件开发，欢迎加入或提供意见，该项目会长期更新，你的 star ⭐，是对我最大的鼓励。
+该开源项目是我为进阶 React，同时探索组件库设计开发思路所做的，故不可用于生产环境。由于个人设计能力有限，故 UI 设计方面会大量参考[Ant Design 组件库](https://ant.design/index-cn)，同时组件的使用方式也会参照 Ant Design 进行实现。如果你也想学习组件开发，欢迎加入或提供意见，你的 star ⭐，是对我最大的鼓励。
 
 ## ✨ 特性
 
@@ -24,7 +24,7 @@ Monki UI，是一款基于 Dumi，由 React + TypeScript 开发的个人组件�
 - 🛡 使用 TypeScript 开发，提升开发体验
 - ✅ 使用单元测试，为组件稳定性保驾护航
 - 📖 提供开发过程的文档思路，助力你学习组件开发
-- 🔖 该项目会长期维护，并不断探索最佳实践
+- 🔖 欢迎贡献组件代码，探索最佳实践
 
 ## 📦 安装
 
@@ -60,7 +60,6 @@ import 'monki-ui/dist/index.css'
 
 🚧 开发中......
 
-- [ ] 开发 Select 组件
 - [ ] 开发 Upload 组件
 
 ✨ 已完成
@@ -75,6 +74,7 @@ import 'monki-ui/dist/index.css'
 - [x] 开发 Input 组件
 - [x] 开发 AutoComplete 组件
 - [x] 开发 Tag 组件
+- [x] 开发 Select 组件
 
 ## 开源协议
 

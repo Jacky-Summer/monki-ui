@@ -1,0 +1,90 @@
+.mk-select {
+  position: relative;
+
+  input {
+    &[readonly] {
+      background-color: $input-bg;
+      border-color: $input-border-color;
+      cursor: pointer;
+      opacity: 1;
+    }
+    &:disabled {
+      background-color: $input-disabled-bg;
+      border-color: $input-disabled-border-color;
+      cursor: not-allowed;
+      opacity: 1;
+    }
+  }
+
+  .mk-input-wrapper {
+    cursor: pointer;
+    &:hover {
+      input {
+        border-color: $primary !important;
+      }
+    }
+  }
+
+  .icon-wrapper {
+    transform: rotate(0deg) !important;
+    transition: transform .25s ease-in-out;
+  }
+}
+
+.mk-select.menu-is-open {
+  .icon-wrapper {
+    transform: rotate(180deg) !important;
+  }
+}
+
+.mk-select-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding-left: 0;
+  white-space: nowrap;
+  list-style: none;
+  background: $white;
+  border: $menu-border-width solid $menu-border-color;
+  box-shadow: $submenu-box-shadow;
+  .mk-select-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $menu-item-padding-y $menu-item-padding-x;
+    color: $body-color;
+    cursor: pointer;
+    transition: $menu-transition;
+    &.is-selected {
+      color: $menu-item-active-color;
+      font-weight: $font-weight-bold;
+    }
+    &.is-disabled {
+      color: $menu-item-disabled-color;
+      cursor: default;
+      pointer-events: none;
+    }
+    &:hover {
+      background-color: rgba($primary, .1);
+    }
+  }
+}
+
+.mk-selected-tags {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 100%;
+  .mk-tag {
+    height: 80%;
+    margin-left: 4px;
+  }
+}

@@ -26,7 +26,7 @@ exports[`AutoComplete test basic AutoComplete behavior 1`] = `
   <div
     className="mk-auto-complete"
   >
-    <Input
+    <ForwardRef
       onChange={[Function]}
       onKeyDown={[Function]}
       placeholder="This is a placeholder"
@@ -43,7 +43,7 @@ exports[`AutoComplete test basic AutoComplete behavior 1`] = `
           value="ab"
         />
       </div>
-    </Input>
+    </ForwardRef>
     <Transition
       animation="zoom-in-top"
       appear={true}
