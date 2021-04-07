@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.8.0...v1.9.0) (2021-04-07)
+
+
+### Features
+
+* add select component ([#74](https://github.com/Jacky-Summer/monki-ui/issues/74)) ([cd002b6](https://github.com/Jacky-Summer/monki-ui/commit/cd002b6d2146ab6434f02c1515c01440e8e99aa2))
+
+
+### Bug Fixes
+
+* select component export name typo ([#76](https://github.com/Jacky-Summer/monki-ui/issues/76)) ([d34d279](https://github.com/Jacky-Summer/monki-ui/commit/d34d2799ea9ee939e05dce89bbf7caeb1812c1f2))
+
 ## [1.8.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.7.2...v1.8.0) (2021-03-14)
 
 
