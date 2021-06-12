@@ -5,7 +5,6 @@
   "title": "Monki UI",
   "author": "JackySummer",
   "main": "dist/index.js",
-  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
     "monki-ui",
