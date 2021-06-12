@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.1](https://github.com/Jacky-Summer/monki-ui/compare/v1.9.0...v1.9.1) (2021-06-12)
+
+
+### Bug Fixes
+
+* no need module ([#79](https://github.com/Jacky-Summer/monki-ui/issues/79)) ([c997dbe](https://github.com/Jacky-Summer/monki-ui/commit/c997dbe514feb0e082dc330c3e51c26df490d820))
+
 ## [1.9.0](https://github.com/Jacky-Summer/monki-ui/compare/v1.8.0...v1.9.0) (2021-04-07)
 
 
